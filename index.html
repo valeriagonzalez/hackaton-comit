@@ -14,33 +14,52 @@
 </head>
 
 <body>
-  <div id=formulario>
-    <h1> Verificador de perfiles de Github</h1>
-    <h2> Insertar nombre de usuario </h2>
+    <div class="row" style="margin-top: 5%; scroll-margin-left: 2%; scroll-margin-right: 2%;">
+        <div class="col-lg-6 text-center"> 
+            <div id=formulario>
+                <h3> Verificador de perfiles de Github</h1>
+                <h4> Insertar nombre de usuario </h2>
+                <div class="text-center">
+                    <form>
+                        <div class="text-center input-group mb-3" style="margin-left: 23%;">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Github.com/</span>
+                            </div>
+                            <input type="text" id="username" class="form-control col-lg-3" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <button onclick="showUserData()" type="button" class="btn btn-info">Go!</button>  
+                        </div>          
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+           
+        <div class="col-lg-5">
+            <div class="card" id="ficha" style="width: 33rem;">           
+                <div class="card-body">
+                    <h5 class="card-title">User data</h5>
+                    <h2 id="usuario"> </h1>
+                    <div id="imagen"></div>
 
-    <form>
-      Nombre de usuario: <br>
-      <input id="username" type="text"> <br>
-    </form>
-
-    <button onclick="showUserData()" type="button" class="btn btn-info">comenzar</button>
-  </div>
-
-  <div id="ficha">
-    <h1 id="usuario"> </h1>
-
-    <div id="imagen"></div>
-
-
-
-    <p id="nombre">Nombre: </p>
-
-    <p id="ubicacion">Ubicacion: </p>
-    <p>URL: <a href="" id="url"></a></p>
-    <p id="seguidores">Seguidores: </p>
-    <p>Repos_url: <a href="" id="repos"></a></p>
-
-  </div>
+                </div>
+                <ul class="list-group list-group-flush">              
+                    <li class="list-group-item"></li>
+                    <span class="input-group-text" id="nombre">Name: </span>
+                    <li class="list-group-item"></li>
+                    <span class="input-group-text" id="ubicacion">Location: </span>
+                    <li class="list-group-item"></li>
+                    <span class="input-group-text" id="seguidores">Followers: </span>
+                    <li class="list-group-item"></li>
+                    <span class="input-group-text">Repositories: <a href="" id="repos"></a></span>
+                    <li class="list-group-item"></li>
+                    <span class="input-group-text">URL: <a href="" id="url"></a></span>
+                </ul>            
+            </div>
+        </div>
+        
+    </div>               
+  
+  
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -48,7 +67,5 @@
 </body>
 
 </html>
-
-
 
 </html>
